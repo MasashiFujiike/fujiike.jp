@@ -1,0 +1,111 @@
+h1 {
+  font-family: 'Fontin Sans';
+  font-size: 21px;
+}
+
+h2 {
+  margin-bottom: 51px;
+  font-weight: 100;
+  font-size: 24px;
+  color: var(--color-text-dimmed);
+}
+
+h3 {
+  padding-bottom: 11px;
+  margin: 71px 0 51px;
+  font-weight: 200;
+  font-size: 19px;
+  color: var(--color-text-dark);
+  border-bottom: 1px solid var(--color-text-dark);
+}
+
+p {
+  margin-bottom: 17px;
+  line-height: 1.9;
+  font-size: 14px;
+  color: var(--color-text);
+}
+@media all and (min-width: 768px) {
+  p {
+    font-size: 15px;
+  }
+}
+
+code {
+  display: inline-block;
+  padding: 0 6px;
+  margin: 0 2px;
+  font-size: inherit;
+  background-color: var(--color-background);
+  border-radius: 3px;
+}
+
+hr {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-background-dark);
+}
+
+main {
+  max-width: 768px;
+  padding: 0 24px 108px;
+  margin: 0 auto;
+}
+
+header {
+  max-width: 768px;
+  padding: 72px 24px 0;
+  margin: 0 auto;  
+}
+@media all and (min-width: 768px) {
+  header {
+    padding: 108px 24px 0;
+  }
+}
+
+header > p {
+  font-size: 13px;
+  color: var(--color-text-dimmed);
+}
+
+/* for article start */
+article {
+  padding-top: 51px;
+}
+@media all and (min-width: 768px) {
+  article {
+    padding-top: 72px;
+  }  
+}
+
+article > h2 > span {
+  /* use it as posted-date */
+  font-size: 13px;
+  font-weight: 200;
+}
+
+article ul {
+  margin-bottom: 17px;
+  background-color: var(--color-background);
+  border-radius: 4px;
+  padding: 17px 21px;
+}
+
+article li {
+  position: relative;
+  padding-left: 21px;
+  font-size: 14px;
+}
+@media all and (min-width: 768px) {
+  article li {
+    font-size: 15px;
+  }  
+}
+
+article li::before {
+  position: absolute;
+  left: 0;
+  content: '-';
+}
+/* for article end */

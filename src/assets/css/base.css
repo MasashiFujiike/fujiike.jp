@@ -1,0 +1,118 @@
+/* reset.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  word-break: break-all;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+*::before,
+*::after {
+  display: block;
+} 
+
+ol,
+ul {
+  list-style: none inside;
+}
+
+a {
+  display: block;
+  font: inherit;
+  text-decoration: none;
+}
+
+address {
+  font: inherit;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+input,
+textarea,
+select,
+option,
+button {
+  border: none;
+  font: inherit;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+button,
+input[type="submit"],
+select {
+  cursor: pointer;
+}
+
+/* base style */
+html,
+body {
+  color: #333;
+  font-size: 10px;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic Pro", "YuGothic", "Meiryo UI", "メイリオ", sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  background-color: #feffff;
+}
+
+b {
+  font-weight: 600;
+  margin: 0 2px;
+}
+
+*,
+*::before,
+*::after {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+span {
+  font: inherit;
+}
+
+form {
+  width: 100%;
+}
+
+img {
+  display: block;
+}
+
+@font-face {
+  font-family: 'Fontin Sans';
+  src: font-url('~@/assets/fonts/Fontin_Sans_R_45b.otf') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fontin Sans';
+  src: font-url('~@/assets/fonts/Fontin_Sans_I_45b.otf') format('embedded-opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+:root {
+  --color-text: #484848;
+  --color-text-dimmed: #456;
+  --color-text-dark: #233;
+  --color-background: #f6f6f6;
+  --color-background-dark: #def;
+}
