@@ -3,8 +3,11 @@
     <the-header />
     <main>
       <ul>
-        <li>
-          <article-item />
+        <li
+          v-for="article in articles"
+          :key="article.id"
+        >
+          <article-item v-bind="article" />
         </li>
       </ul>
     </main>
@@ -22,7 +25,6 @@ export default {
   data () {
     return {
       db: null,
-      // This will be used after enabling parsing markdown.
       articles: []
     }
   },
