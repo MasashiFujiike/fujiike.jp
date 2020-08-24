@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>fujiike.jp</h1>
+    <h1 class="title">fujiike.jp</h1>
     <p>
       いろいろあるので、いろいろ書いていく。
     </p>

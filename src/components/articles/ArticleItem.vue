@@ -1,9 +1,9 @@
 <template>
   <article>
-    <h2>
+    <h1>
       {{ title }}
       <span>{{ createdAtString }}</span>
-    </h2>
+    </h1>
     <section v-html="parsedMarkdown"></section>
   </article>
 </template>
@@ -31,7 +31,7 @@ export default {
       return moment(this.createdAt).format('YYYY-MM-DD')
     },
     parsedMarkdown () {
-      return marked(this.content)
+      return marked(this.content.replace(/\\n/g, '\n'))
     }
   }
 }
