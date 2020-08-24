@@ -2,16 +2,10 @@
   <section>
     <the-header />
     <main>
-      <ul>
-        <li
-          v-for="article in articles"
-          :key="article.id"
-        >
-          <router-link :to="`/article/${article.id}`">
-            <article-item v-bind="article" />
-          </router-link>
-        </li>
-      </ul>
+      <article-item
+        v-if="article"
+        v-bind="article"
+      />
     </main>
   </section>
 </template>
@@ -27,16 +21,18 @@ export default {
   data () {
     return {
       db: null,
-      articles: []
+      article: null
     }
   },
   created () {
     this.db = firebase.firestore()
     this.db.collection('articles').onSnapshot((querySnapshot) => {
       querySnapshot.forEach((doc) => {
-        const article = doc.data()
-        article.id = doc.id
-        this.articles.push(article)
+        if (doc.id === this.$route.params.articleId) {
+          const article = doc.data()
+          article.id = doc.id
+          this.article = article
+        }
       })
     })
   }
