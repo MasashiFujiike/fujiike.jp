@@ -114,6 +114,7 @@ img {
   --color-text-dimmed: #456;
   --color-text-dark: #233;
   --color-background: #f6f6f6;
-  --color-background-dark: #def;
+  --color-background-dimmed: #def;
+  --color-background-dark: #233;
   --color-border-light: #ccc;
 }

@@ -6,4 +6,4 @@ module.exports = {
   //   public: "http://xxx.ngrok.io",
   //   disableHostCheck: true,
   // }
-};
+}

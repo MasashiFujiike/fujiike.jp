@@ -46,6 +46,13 @@ p {
   }
 }
 
+pre > code {
+  display: block;
+  max-width: 100%;
+  overflow: scroll;
+  background-color: var(--color-background-dark);
+}
+
 code {
   display: inline-block;
   padding: 0 6px;
@@ -55,11 +62,23 @@ code {
   border-radius: 3px;
 }
 
+blockquote {
+  margin: 2px 0 17px;
+  font-size: inherit;
+  background-color: var(--color-background);
+  border-radius: 3px;
+  font-style: italic;
+}
+blockquote p {
+  padding: 8px 12px;
+  margin: 0;
+}
+
 hr {
   display: block;
   height: 3px;
   width: 100%;
-  background-color: var(--color-background-dark);
+  background-color: var(--color-background-dimmed);
 }
 
 main {
@@ -98,6 +117,10 @@ article > h2 > span {
   /* use it as posted-date */
   font-size: 13px;
   font-weight: 200;
+}
+
+article a {
+  display: inline-block;
 }
 
 article ul {

@@ -8,6 +8,7 @@
   </article>
 </template>
 <script>
+import hljs from 'highlightjs'
 import marked from 'marked'
 import moment from 'moment'
 
@@ -25,6 +26,14 @@ export default {
       type: String,
       required: true
     }
+  },
+  created () {
+    marked.setOptions({
+      langPrefix: '',
+      highlight: (code, lang) => {
+        return hljs.highlightAuto(code, [lang]).value
+      }
+    })
   },
   computed: {
     createdAtString () {
