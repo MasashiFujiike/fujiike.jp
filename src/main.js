@@ -5,6 +5,7 @@ import store from './store'
 
 import './assets/css/base.css'
 import './assets/css/common.css'
+import './assets/css/highlightjs/monokai-sublime.css'
 
 import firebase from 'firebase/app'
 import 'firebase/analytics'
